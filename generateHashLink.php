@@ -1,4 +1,5 @@
-/**
+    <?php
+    /**
      * Create hash 
      *
      * @param string $service_domain
@@ -17,13 +18,11 @@
      * Example:
      * Generate hash link for CDN service cdn.mycompany.com/images/photo.png for next 3 days, assume today is Sun, 01 Apr 2012
      *
-     * <\? php
      *
      * $hash_link = generateHashLink('cdn.mycompany.com', '/images/photo.png', 'l3cewcccol', 1333497600);
      *
      * print $hash_link;
      *
-     * \?>
      *
      * http://cdn.mycompany.com/images/photo.png?secure=kaGd_cu6KOfrëfeIy4deddfe4X3jy5Rw==,1333497600
      * 
@@ -56,3 +55,5 @@
                 str_replace($search_chars, $replace_chars, base64_encode(md5($hash_string, TRUE))).
                 $expiry_timestamp;
     }
+
+    // END
