@@ -1,6 +1,6 @@
     <?php
     /**
-     * Create hash 
+     * Create hashh
      *
      * @param string $service_domain
      * The CDN Service Domain, eg. cdn.mycompany.com
