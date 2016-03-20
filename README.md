@@ -12,18 +12,18 @@ PARAMETERS
   * http or https, default = http
 * CDN domain
   * CDN service domain
-  * e.g, '12345.r.cdnsun.net'
+  * example: '12345.r.cdnsun.net'
 * file path
   * e.g. '/images/photo.jpeg'
 * URL Signing Key
   * URL Signing Key from the https://cdnsun.com/cdn/settings page
-  * e.g. 'jfXNDdkOp2'
+  * example: 'jfXNDdkOp2'
 * expiration time (optional)
   * expiration time of token, UNIX timestamp format.
-  * e.g., 1333497600
+  * example: 1333497600
 * ip (optional)
   * Allow access only to the specified IP address
-  * e.g., '1.2.3.4'
+  * example: '1.2.3.4'
 
 
 TO GENERATE TOKEN
