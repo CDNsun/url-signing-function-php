@@ -3,7 +3,7 @@
 
 USAGE
 ```
-UrlSigning.php -s <scheme> -r <CDN domain> -p <file path> -k <URL Signing Key> [-e <expiration time> ] [-i <ip>]
+UrlSigning.php -s <scheme> -r <CDN domain> -p <file path> -k <URL Signing Key> [-e <expiration time> ] [-i <IP>]
 ```
 
 PARAMETERS
@@ -21,7 +21,7 @@ PARAMETERS
 * expiration time (optional)
   * expiration time of token, UNIX timestamp format.
   * example: 1333497600
-* ip (optional)
+* IP (optional)
   * Allow access only to the specified IP address
   * example: '1.2.3.4'
 

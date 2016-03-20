@@ -1,5 +1,5 @@
 <?php 
-function UrlSigning($scheme="http", $cdnResourceUrl, $filePath="/", $secretKey="", $expiryTimestamp = "", $clientIp = "") {
+function generateSignedUrl($scheme="http", $cdnResourceUrl, $filePath="/", $secretKey="", $expiryTimestamp = "", $clientIp = "") {
     
     if (empty($scheme) || empty($cdnResourceUrl)) {
         exit("First argument \"scheme\" and/or second argument \"cdnResourceUrl\" cannot be empty.");
@@ -36,4 +36,14 @@ function UrlSigning($scheme="http", $cdnResourceUrl, $filePath="/", $secretKey="
     
     return $urlStr;
 }
+
+$options = getopt("r:p:k:s:e:i:");
+$r = isset($options["r"]) ? $options["r"] : null;
+$p = isset($options["p"]) ? $options["p"] : null;
+$k = isset($options["k"]) ? $options["k"] : null;
+$s = isset($options["s"]) ? $options["s"] : null;
+$e = isset($options["e"]) ? $options["e"] : null;
+$i = isset($options["i"]) ? $options["i"] : null;
+
+echo generateSignedUrl($s, $r, $p, $k, $e, $i);
 ?>
