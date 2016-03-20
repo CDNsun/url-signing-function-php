@@ -22,6 +22,17 @@ PARAMETERS
   * expiration time of token, UNIX timestamp format.
   * e.g., 1333497600
 * ip (optional)
-  * IP address allowed to access
-  * e.g., 1.2.3.4
+  * Allow access only to the specified IP address
+  * e.g., '1.2.3.4'
+
+
+TO GENERATE TOKEN
+```
+php UrlSigning.php -s 'http' -r '12345.r.cdnsun.net' -p '/images/photo.jpeg' -k 'jfXNDdkOp2' -e 1333497600 -i '1.2.3.4'
+```
+Sample Output:
+```
+http://12345.r.cdnsun.net/images/photo.jpeg?secure=DMF1ucDxtHCxwYQ==
+```
+
   

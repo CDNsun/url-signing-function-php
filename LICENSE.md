@@ -1,4 +1,4 @@
-Copyright (C) 2015 CDNsun, email: info@cdnsun.com
+Copyright (C) 2016 CDNsun, email: info@cdnsun.com
 
 This program is a free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
