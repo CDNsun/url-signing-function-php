@@ -24,7 +24,7 @@ function generateSignedUrl($scheme="http", $cdnResourceUrl, $filePath="/", $secr
     
     // 2. Setup URL
     // 2.1 Append argument - secure (compulsory)
-    $urlStr = "{$scheme}://{$cdnResourceUrl}?secure=" . str_replace($searchChars, $replaceChars, base64_encode(md5($tokenKey, TRUE)));   
+    $urlStr = "{$scheme}://{$cdnResourceUrl}{$filePath}?secure=" . str_replace($searchChars, $replaceChars, base64_encode(md5($tokenKey, TRUE)));   
     // 2.2 Append argument - expires
     if (!empty($expiryTimestamp) || $expiryTimestamp === "0" || $expiryTimestamp === 0){
         $urlStr .= "&expires={$expiryTimestamp}";
